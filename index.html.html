@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Eemil Voitk</title>
+
+    <style>
+        body {
+            margin: 40px auto;
+            max-width: 650px;
+            line-height: 1.6;
+            font-size: 18px;
+            color: #444;
+            padding: 0 10px;
+            font-family: serif;
+            background-color: #e3e3e3;
+        }
+
+        .header-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav a {
+            margin: 0 5px;
+        }
+
+        img.portrait {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-flex">
+        <img class="portrait" src="eemilvoitkthumbsupmountainnorwayfotografCropped.png" alt="Portrait of Eemil Voitk">
+        <div>
+            <h1>Good day, <s>fools</s> folks.</h1>
+            
+            <h2>Eemil here !</h2>
+            <nav>
+                <a alt="My YouTube channel named VoitkE - profile picture of a painted dog (Indi <3)" href="https://www.youtube.com/@VoitkE">YouTube/Voitk</a>
+             
+                <a alt="link to email me at altmoligmanj@gmail.com" href="mailto:altmoligmanj@gmail.com">altmoligmanj@gmail.com</a>
+                <!--
+                <a href="#">Link 3</a>
+             -->
+            </nav>
+        </div>
+    </div>
+    <hr>
+</header>
+
+<main>
+    <section>
+        <h2>About</h2>
+        <p>I am Eemil Voitk from Norway, a pianist for twelve years and soon-to-be organist. I enjoy creating across mediums, from writing and art, to digital projects such as Minecraft maps and most current: a Rain World region. I am drawn to unsettling work. This site is a space for said projects, experiments, and things I care about, updated whenever something is ready to share.<br><br>Write me something on eMail !</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <ul> nada.
+             <!--
+            <li><a href="#">Project One</a></li>
+            <li><a href="#">Project Two</a></li>
+            <li><a href="#">Project Three</a></li>
+  -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>YouTube Channel</h2>
+        <p>I have an assortment of videos, not quite quality in my opinion, but they're there. My favourite must be the ones titled "<a alt="My YouTube channel named VoitkE - profile picture of a painted dog (Indi <3)" href="https://www.youtube.com/watch?v=NsQZMYUBl-4">Armas Memme.</a>" and "<a alt="My YouTube channel named VoitkE - profile picture of a painted dog (Indi <3)" href="https://youtu.be/Zf_xAyDm4fc">rullekake til farmor ❤️</a>". This will likely be the style of video going forward as well as nature scenery and some art projects -- short films perhaps.<br><a alt="My YouTube channel named VoitkE - profile picture of a painted dog (Indi <3)" href="https://www.youtube.com/@VoitkE">@VoitkE on YouTube</a></p>
+    </section>
+    <section><h2>Writing</h2>
+    Over on <a href="https://voitk.nekoweb.org/stories.html">voitk.nekoweb.org/stories</a> I've a couple of short stories. Of the two that are published on that page, I particularly enjoy "Jeeb pondering the orb" which is accompanied by my piano "Prelude in E minor by Chopin". <br>I am looking to move them here on their own page as well as some other of my assorted poems and the like. More short stories coming at some point on here ?? yes.</section>
+</main>
+
+<footer>
+<small>
+Last Updated: <span id="lastmod">Last updated at some point in the past.</span> <br>
+    &copy; 2025 Eemil Voitk. All rights reserved for all creative works. Use, reproduction, or AI training of these works is prohibited without permission.
+</small>
+
+
+<script>
+(function () {
+    const raw = document.lastModified;
+    if (!raw) return; // fallback stays
+
+    const date = new Date(raw);
+
+    // Convert to Norway time zone (Europe/Oslo covers Alta)
+    const options = {
+        timeZone: "Europe/Oslo",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+    };
+
+    const formatted = new Intl.DateTimeFormat("en-CA", options)
+        .format(date)
+        .replace(/-/g, '/'); // convert 2025-12-09 → 2025/12/09
+
+    document.getElementById("lastmod").textContent = formatted;
+})();
+</script>
+
+</footer>
+
+</body>
+</html>
